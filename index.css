@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #318CFE;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    opacity: .5;
+    height: 100vh;
+    background-image: url(./html-css.png);
+    opacity: .999;
+    /* background-size: contain; */
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.drop {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+    opacity: 0.8;
+    margin: 20px
+}
+
+.drop::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #318CFE;
+    border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+}
+
+.drop::after{
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: #e6fdfb;
+    border-radius: 44% 56% 46% 54% / 36% 50% 50% 64%;
+    left: 130px;
+    top: 40px;
+    box-shadow: 16px 40px 0 -10px white;
+    opacity: 0.8;
+}
+
+.drop1{
+    background: #54abfb;
+    border: 2px solid #3d93ff;
+}
+.drop1::before{
+    background: #318CFE;
+    box-shadow: -20px 30px 16px #1B6CFB, -40px 60px 32px #1b6cfb, inset
+    -6px 6px 10px #1B6CFB, inset 2px 6px 10px #1a74e5, inset 20px -20px
+    22px white, inset 40px -40px 44px #a8ceff;
+}
+
+.drop2{
+    background: #9ffb54;
+    border: 2px solid #3dff98;
+}
+.drop2::before{
+    background: #38fe31;
+    box-shadow: -20px 30px 16px #1b8ffb, -40px 60px 32px #1b6cfb, inset
+    -6px 6px 10px #4ffb1b, inset 2px 6px 10px #1ae51a, inset 20px -20px
+    22px white, inset 40px -40px 44px #1a921a;
+}
+
+.drop3{
+    background: #fb8954;
+    border: 2px solid #ff3d3d;
+}
+.drop3::before{
+    background: #fe6131;
+    box-shadow: -20px 30px 16px #1b8ffb, -40px 60px 32px #1b6cfb, inset
+    -6px 6px 10px #fb1b1b, inset 2px 6px 10px #e5491a, inset 20px -20px
+    22px white, inset 40px -40px 44px #921a1a;
+}
